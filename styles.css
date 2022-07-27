@@ -1,5 +1,50 @@
+:root {
+  --btn-color: #fff;
+  --btn-color-hover: #ddd;
+  --btn-background-color: transparent;
+  --btn-border-color: transparent;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+.carousel {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
+  margin: 110px 450px;
+}
+.image--container {
+  /* we displayed the images in a flex row */
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+.button--container {
+  position: absolute;
+  top: 350px;
+}
+.btn {
+  background-color: var(--btn-background-color);
+  color: var(--btn-color);
+  padding: 20px;
+  border: 1px solid var(--btn-border-color);
+}
+#right {
+  position: relative;
+  left: 380px;
+}
+.btn:hover {
+  opacity: 0.9;
+  color: var(--btn-color-hover);
+}
+.btn:focus {
+  outline: none;
 }
