@@ -3,6 +3,8 @@
   --btn-background-color-hover: rgba(0, 0, 0, 0.8);
   --btn-background-color: transparent;
   --btn-border-color: transparent;
+  --box-shadow-carousel-container: rgba(0, 0, 0, 0.3);
+  --photo-number-color: #fff;
 }
 * {
   margin: 0;
@@ -15,7 +17,7 @@ img {
   object-fit: cover;
 }
 .carousel {
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 5px var(--box-shadow-carousel-container);
   height: 500px;
   width: 500px;
   overflow: hidden;
@@ -56,4 +58,12 @@ img {
   to {
     opacity: 1;
   }
+}
+.image--container--number {
+  position: absolute;
+  top: 120px;
+  left: 470px;
+  font-size: 20px;
+  color: var(--photo-number-color);
+  display: inline-block;
 }
