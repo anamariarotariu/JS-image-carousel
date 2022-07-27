@@ -1,6 +1,6 @@
 :root {
   --btn-color: #fff;
-  --btn-color-hover: #ddd;
+  --btn-background-color-hover: rgba(0, 0, 0, 0.8);
   --btn-background-color: transparent;
   --btn-border-color: transparent;
 }
@@ -22,12 +22,6 @@ img {
   margin: 110px 450px;
   display: block;
 }
-.image--container {
-  /* we displayed the images in a flex row */
-  display: flex;
-  transform: translateX(0);
-  transition: transform 0.5s ease-in-out;
-}
 .button--container {
   position: absolute;
   top: 350px;
@@ -37,16 +31,29 @@ img {
   color: var(--btn-color);
   padding: 20px;
   font-size: 22px;
+  font-weight: 700;
+  transition: 0.6s ease;
   border: 1px solid var(--btn-border-color);
 }
 #right {
   position: relative;
-  left: 380px;
+  left: 375px;
 }
 .btn:hover {
-  opacity: 0.9;
-  color: var(--btn-color-hover);
+  background-color: var(--btn-background-color-hover);
 }
 .btn:focus {
   outline: none;
+}
+.image--animation {
+  animation-name: fade-effect;
+  animation-duration: 1.5s;
+}
+@keyframes fade-effect {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
