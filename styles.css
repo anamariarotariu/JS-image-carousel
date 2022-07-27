@@ -20,6 +20,7 @@ img {
   width: 500px;
   overflow: hidden;
   margin: 110px 450px;
+  display: block;
 }
 .image--container {
   /* we displayed the images in a flex row */
