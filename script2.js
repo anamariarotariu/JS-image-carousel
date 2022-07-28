@@ -9,7 +9,7 @@ let index = 0;
 function switchImage() {
   if (index > imageList.length - 1) {
     index = 0;
-    imagesContainer.style.transition = "transform 0.1s ease-in-out";
+    imagesContainer.style.transition = "transform 0s ease-in-out";
   } else if (index < 0) {
     index = imageList.length - 1;
   }
