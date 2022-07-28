@@ -12,6 +12,7 @@ function switchImage() {
     imagesContainer.style.transition = "transform 0s ease-in-out";
   } else if (index < 0) {
     index = imageList.length - 1;
+    imagesContainer.style.transition = "transform 0s ease-in-out";
   }
   imagesContainer.style.transform = `translateX(${-index * 500}px)`;
 }
