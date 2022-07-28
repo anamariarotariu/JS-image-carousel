@@ -47,7 +47,13 @@ img {
 .btn:focus {
   outline: none;
 }
-.image--animation {
+.image--container {
+  /* we displayed the images in a flex row */
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+/* .image--animation {
   animation-name: fade-effect;
   animation-duration: 1.5s;
 }
@@ -58,7 +64,7 @@ img {
   to {
     opacity: 1;
   }
-}
+} */
 .image--container--number {
   position: absolute;
   top: 120px;
